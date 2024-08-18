@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>СПИСОК ДЕЛ. ФИНАЛЬНАЯ ЗАДАЧА.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button class="button-switch" onmouseup = "mouseup()" onmousedown = "mousedawn()" id = "switch">Сменить фон</button>
+
+    <div class="todo-container">
+        <div class="add-task">
+            
+            <input type="text" class="inp"  placeholder="Добавьте задачу">
+            <span class="plus" onclick="addTask()">+</span>
+        </div>
+        <div class="tasks-content">
+            <span class="no-tasks-message">Нет задач для отображения</span>
+            <ul class="tasks">
+         <!--       <li class="task">
+                    <span class="task-name"></span>
+                    <button class="button-delete">DELETE</button>
+                </li> -->
+  
+              </ul>
+        </div>
+    </div>
+    <div class="task-stats">
+        <div class="tasks-count">
+            Задачи <span class = "tasks-all">0</span>
+        </div>
+        <div class="tasks-completed">
+            Выполнено <span class="tasks-completed-count">0</span>
+        </div>
+    </div>
+    <script src="toDoList.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+
+</body>
+
+</html>
